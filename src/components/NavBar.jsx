@@ -52,7 +52,7 @@ const NavBar = () => {
                         <img src={logo} alt="" className='w-10 inline-block items-center' /><span className='text-[#263238]'>NEXCENT</span>
                     </a>
                     {/* Nav Item for the large devise */}
-                    <ul className='md:flex space-x-12 hidden'>
+                    <ul className='md:flex space-x-12 hidden cursor-pointer'>
                         {
                             navItems.map(({ link, path }) => <Link to={path} spy={true} smooth={true} offset={-100} key={path} className='block text-gray900
                              hover:text-BrandPrimary first:font-medium'>{link}</Link>)
